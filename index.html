@@ -12,7 +12,7 @@
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=76803a2a-58de-49e7-9223-367135776255"> </script>
 <!-- End of pdiplaytechzendesk Zendesk Widget script -->
 
-   <script type="text/javascript">
+<!-- <script type="text/javascript">
      
 window.zESettings = {
  webWidget: {
@@ -30,8 +30,22 @@ window.zESettings = {
   }
 };
 </script>
-    
- 
+-->
+  
+ <script type="text/javascript">
+  window.zESettings = {
+    webWidget: {
+      authenticate: {
+        chat: {
+          jwtFn: function(callback) {
+            // Fetch your jwt token and then call our supplied callback below.
+            callback('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSXZhbl9hdXRvIiwiZW1haWwiOiJpdmFuX2F1dG9AcGxheXRlY2guY29tIiwiaWF0IjoxNTg4NjgzMzU1LjE1NjUwOCwiZXh0ZXJuYWxfaWQiOiIxMjMifQ.C6-9iFomyJS6tcKLVAMaBhyECUf_FRa-LjvhQXSiCqA');
+          }
+        }
+      }
+    }
+  };
+</script>
     
     
 
