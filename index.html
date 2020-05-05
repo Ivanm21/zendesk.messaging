@@ -13,22 +13,25 @@
 <!-- End of pdiplaytechzendesk Zendesk Widget script -->
 
    <script type="text/javascript">
-  window.zESettings = {
-    webWidget: {
-      authenticate: {
-        chat: {
-          jwtFn: function(callback) {
-            // Fetch your jwt token and then call our supplied callback below.
-            callback('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSXZhbl9hdXRvIiwiZW1haWwiOiJpdmFuX2F1dG9AcGxheXRlY2guY29tIiwiaWF0IjoxNTg4NjgyNjQwLjgyNTgyNzEsImV4dGVybmFsX2lkIjoiMTIzIn0.4BWITLqTzuL48U-WO_ekGxEwpGl_eXGIXhbQWwY8fho');
-          }
+     
+window.zESettings = {
+ webWidget: {
+   authenticate: {
+     chat: {
+       jwtFn: function(callback) { 
+         fetch('https://enfi0q8rxv44i.x.pipedream.net/').then(function(res) {
+            res.text().then(function(jwt) {
+             callback(jwt);
+            });
+          });
         }
-      }
+      } 
     }
-  };
+  }
+};
 </script>
     
-    
-    
+ 
     
     
 
