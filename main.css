@@ -1,0 +1,14 @@
+body {
+    background-image: url("http://www.ronoslund.com/0037wb.jpg");
+}
+
+.divider {
+    border-bottom: 1px solid gray;
+    margin: 30px 0;
+}
+
+footer img {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

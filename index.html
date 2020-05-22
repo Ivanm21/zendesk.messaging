@@ -1,56 +1,23 @@
 <!doctype html>
 <html>
   <head>
-    <title>This is the title of the webpage!</title>
+    <title>Chat integration page</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
 
-    
+  <main>
+    <input id="token" placeholder="Token">
 
-<!-- Start of pdiplaytechzendesk Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=76803a2a-58de-49e7-9223-367135776255"> </script>
-<!-- End of pdiplaytechzendesk Zendesk Widget script -->
+    <button onclick="login()">Load chat as real player</button>
 
-<!-- <script type="text/javascript">
-     
-window.zESettings = {
- webWidget: {
-   authenticate: {
-     chat: {
-       jwtFn: function(callback) { 
-         fetch('https://enfi0q8rxv44i.x.pipedream.net/').then(function(res) {
-            res.text().then(function(jwt) {
-             callback(jwt);
-            });
-          });
-        }
-      } 
-    }
-  }
-};
-</script>
--->
-  
- <script type="text/javascript">
-  window.zESettings = {
-    webWidget: {
-      authenticate: {
-        chat: {
-          jwtFn: function(callback) {
-            // Fetch your jwt token and then call our supplied callback below.
-            callback('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSXZhbl9hdXRvIiwiZW1haWwiOiJpdmFuX2F1dG9AcGxheXRlY2guY29tIiwiaWF0IjoxNTg4NjgzMzU1LjE1NjUwOCwiZXh0ZXJuYWxfaWQiOiIxMjMifQ.C6-9iFomyJS6tcKLVAMaBhyECUf_FRa-LjvhQXSiCqA');
-          }
-        }
-      }
-    }
-  };
-</script>
-    
-    
+    <div class="divider"></div>
 
-    
-    
-    
+    <button onclick="guest()">Load chat as guest</button>
+
+    <script src="main.js"></script>
+  </main>
+  <footer id="footer"></footer>
+
   </body>
 </html>
