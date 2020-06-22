@@ -52,7 +52,7 @@ function addTag(){
     }
     window.zE('webWidget', 'chat:addTags',[tag]);
     window.zE('webWidget', 'updatePath', {
-        url: window.location.href + '/addedTags,
+        url: window.location.href + '/addedTags',
         title: "Tag added!"
     });
 
