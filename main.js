@@ -42,3 +42,19 @@ function appendImageAfterClick() {
     //$img.src = 'https://hsto.org/getpro/habr/comment_images/3f1/f54/a1b/3f1f54a1bca0277a20b65310d155fe2d.gif';
     //$footer.appendChild($img);
 }
+
+function addTag(){
+     var tag = document.getElementById('tag').value;
+    
+     if(!tag) {
+        alert('please enter the tag');
+        return;
+    }
+    window.zE('webWidget', 'chat:addTags',[tag]);
+    window.zE('webWidget', 'updatePath', {
+        url: window.location.href + '/addedTags,
+        title: "Tag added!"
+    });
+
+    
+}
