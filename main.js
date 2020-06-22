@@ -39,6 +39,6 @@ function loadChat() {
 function appendImageAfterClick() {
     var $img = document.createElement('img');
     var $footer = document.getElementById('footer');
-    $img.src = 'https://hsto.org/getpro/habr/comment_images/3f1/f54/a1b/3f1f54a1bca0277a20b65310d155fe2d.gif';
-    $footer.appendChild($img);
+    //$img.src = 'https://hsto.org/getpro/habr/comment_images/3f1/f54/a1b/3f1f54a1bca0277a20b65310d155fe2d.gif';
+    //$footer.appendChild($img);
 }
