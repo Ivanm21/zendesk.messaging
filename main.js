@@ -56,7 +56,7 @@ function addTag(){
 
 function updatePath(){
     var title = document.getElementById('title').value;
-    var new_url = 'https://updatetag.com/tagUpdated'
+    var new_url = 'https://' + title + '.com/tagUpdated'
      window.zE('webWidget', 'updatePath', {
         url: new_url,
         title: title
