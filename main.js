@@ -51,15 +51,15 @@ function addTag(){
         return;
     }
     window.zE('webWidget', 'chat:addTags',[tag]);
-    updatePath();
-
     
 }
 
 function updatePath(){
+    var title = document.getElementById('title').value;
+    var new_url = window.location.href + 'tagUpdated'
      window.zE('webWidget', 'updatePath', {
-        url: window.location.href + '/addedTags',
-        title: "Tag added!"
+        url: new_url,
+        title: title
     });   
     
 }
