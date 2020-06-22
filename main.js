@@ -63,3 +63,13 @@ function updatePath(){
     });   
     
 }
+
+function removeTag(){
+     var tag = document.getElementById('tag').value;
+    
+     if(!tag) {
+        alert('please enter the tag');
+        return;
+    }
+    zE('webWidget', 'chat:removeTags', [tag]);   
+}
