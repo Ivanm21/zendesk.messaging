@@ -7,8 +7,15 @@
   <body>
 
   <main>
-    <input id="token" placeholder="Token">
+    <div id="jwt">
+      <input placeholder="session token" id="sessionToken"><br /><br />
+      <input placeholder="username" id="username"><br /><br />
+      <input placeholder="casino name" id="casinoName"><br /><br />
+      <button onclick="generateJWT()">get JWT</button>
+    </div>
+    <div class="divider"></div>
 
+    <input id="token" placeholder="Token"><br /><br />
     <button onclick="login()">Load chat as real player</button>
 
     <div class="divider"></div>
