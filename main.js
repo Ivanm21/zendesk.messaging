@@ -52,9 +52,9 @@ function login() {
 
     loadChat();
     
-  window.zE('messenger', 'loginUser', function (callback) {
-    callback(jwttoken);
-  });
+    window.zE('messenger', 'loginUser', function (callback) {
+        callback(jwttoken);
+      });
 
     
 }
