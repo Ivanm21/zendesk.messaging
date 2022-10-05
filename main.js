@@ -50,12 +50,13 @@ function login() {
         return;
     }
 
-
+    loadChat();
+    
     window.zE('messenger', 'loginUser', function (callback) {
         callback(token);
     });
 
-    loadChat();
+    
 }
 
 function guest() {
