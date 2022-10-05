@@ -50,17 +50,10 @@ function login() {
         return;
     }
 
-    window.zESettings = {
-        webWidget: {
-            authenticate: {
-                chat: {
-                    jwtFn: function(callback) {
-                        callback(token);
-                    }
-                }
-            }
-        }
-    };
+
+    window.zE('messenger', 'loginUser', function (callback) {
+        callback(token);
+    });
 
     loadChat();
 }
@@ -72,7 +65,7 @@ function guest() {
 function loadChat() {
     var script = document.createElement('script');
     script.id = 'ze-snippet';
-    script.src = 'https://static.zdassets.com/ekr/snippet.js?key=76803a2a-58de-49e7-9223-367135776255';
+    script.src = 'https://static.zdassets.com/ekr/snippet.js?key=3e9a8402-7452-4da6-bb53-a56c00030d8f';
     script.type = 'text/javascript';
     document.body.parentNode.appendChild(script);
 }
