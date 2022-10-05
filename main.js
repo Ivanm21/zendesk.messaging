@@ -43,18 +43,18 @@ function handleResponse(response) {
 }
 
 function login() {
-    var token = document.getElementById('token').value;
+    var jwttoken = document.getElementById('token').value;
 
-    if(!token) {
+    if(!jwttoken) {
         alert('Token required !!');
         return;
     }
 
     loadChat();
     
-    window.zE('messenger', 'loginUser', function (callback) {
-        callback(token);
-    });
+  zE('messenger', 'loginUser', function (callback) {
+    callback(jwttoken);
+  });
 
     
 }
